@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Innocent</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/Asset 1.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- header section -->
+
+    <header id="top">
+    <div class="container nav" role="navigation" aria-label="Primary">
+      <a href="#top" class="brand" aria-label="Home">
+        <span class="brand-badge" aria-hidden="true"><span><img src="Images/Asset 1.png" alt="Logo" style="height: 35px;"></span></span>
+        <span>Alexander Innnocent</span>
+      </a>
+      <nav class="links" aria-label="Site Links">
+        <a class="active" href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="burger" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open Menu">☰</button>
+    </div>
+    <div id="mobile-nav" class="container mobile" hidden>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+    <main>
+
+    <!-- Hero section -->
+
+    <section class="container hero" aria-labelledby="intro-title">
+      <div>
+        <span class="tag">Graphics · Web · Video</span>
+        <h1 id="intro-title" class="title">I craft bold brands, fast websites, and scroll‑stopping edits.</h1>
+        <p class="subtitle">From logo systems and pitch‑ready decks to full‑stack web builds and cinematic cuts — I help ideas look and perform their best.</p>
+        <div class="cta">
+          <a class="btn primary" href="#contact">Start a Project</a>
+          <a class="btn ghost" href="#projects">See Work</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Showcase Grid">
+        <div style="display:flex; align-items:center; gap:10px; justify-content:space-between">
+          <strong>Recent Work Grid</strong>
+          <span class="muted">interactive preview</span>
+        </div>
+        <div class="hero-grid" aria-hidden="true">
+          <div class="tile"></div>
+          <div class="tile"></div>
+          <div class="tile"></div>
+          <div class="tile"></div>
+          <div class="tile"></div>
+          <div class="tile"></div>
+          <div class="tile"></div>
+          <div class="tile"></div>
+          <div class="tile"></div>
+          <div class="tile"></div>
+          <div class="tile"></div>
+          <div class="tile"></div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Service section -->
+    <section id="services" class="container" aria-labelledby="services-title">
+      <div class="section-head">
+        <div>
+          <h2 id="services-title">Services</h2>
+          <p>End‑to‑end creative for startups, brands, and creators.</p>
+        </div>
+        <a class="btn" href="#contact">Get a Quote</a>
+      </div>
+      <div class="grid cols-3">
+        <article class="card" aria-labelledby="svc-gfx-title">
+          <div class="icon" aria-hidden="true">🎨</div>
+          <h3 id="svc-gfx-title">Graphic Design</h3>
+          <p class="muted">Brand identity, logos, social kits, pitch decks, posters, packaging, and print.</p>
+          <div class="badges" aria-label="Tools">
+            <span class="badge">Illustrator</span>
+            <span class="badge">Photoshop</span>
+            <span class="badge">Corel Draw</span>
+          </div>
+        </article>
+        <article class="card" aria-labelledby="svc-web-title">
+          <div class="icon" aria-hidden="true">🧠</div>
+          <h3 id="svc-web-title">Web Development</h3>
+          <p class="muted">Responsive sites, SPA/MPA builds, performance tuning, CMS, and e‑commerce.</p>
+          <div class="badges" aria-label="Stack">
+            <span class="badge">HTML/CSS/JS</span>
+            <span class="badge">Node</span>
+            <span class="badge">React/Vue</span>
+          </div>
+        </article>
+        <article class="card" aria-labelledby="svc-video-title">
+          <div class="icon" aria-hidden="true">🎬</div>
+          <h3 id="svc-video-title">Video Editing</h3>
+          <p class="muted">Commercial spots, reels, motion graphics,products ads, trailers and captions.</p>
+          <div class="badges" aria-label="NLE">
+            <span class="badge">Capcut</span>
+            <span class="badge">After Effects</span>
+            <span class="badge">Premiere Pro</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container" aria-labelledby="projects-title">
+      <div class="section-head">
+        <div>
+          <h2 id="projects-title">Selected Projects</h2>
+          <p>Filter by discipline to jump to what you need.</p>
+        </div>
+        <div class="filters" role="tablist" aria-label="Project filters">
+          <button class="chip active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="chip" data-filter="graphics" role="tab" aria-selected="false">Graphics</button>
+          <button class="chip" data-filter="web" role="tab" aria-selected="false">Web</button>
+          <button class="chip" data-filter="video" role="tab" aria-selected="false">Video</button>
+        </div>
+      </div>
+
+      <div class="grid cols-3" id="project-grid">
+
+        <!-- PROJECT CARD TEMPLATE (duplicate/edit as needed) -->
+        <article class="card project" data-category="graphics" aria-labelledby="p1-title">
+          <div class="thumb" role="img" aria-label="Brand identity mockup">
+            <div class="placeholder">Brand Identity Kit</div>
+          </div>
+          <div class="overlay" aria-hidden="true">
+            <div class="actions">
+              <a class="btn" href="#" data-open-modal data-modal-title="Brand Identity Kit" data-modal-type="image" data-modal-src="" data-modal-desc="Logo suite, color system, typography, and social templates.">Preview</a>
+              <a class="btn primary" href="#contact">Hire Me</a>
+            </div>
+          </div>
+          <div class="meta">
+            <h4 id="p1-title">Yasmin Brand System</h4>
+            <div class="badges"><span class="badge">Logo</span><span class="badge">Social Kit</span></div>
+          </div>
+        </article>
+
+        <article class="card project" data-category="web" aria-labelledby="p2-title">
+          <div class="thumb" role="img" aria-label="Responsive website screenshot">
+            <div class="placeholder">SaaS Landing</div>
+          </div>
+          <div class="overlay" aria-hidden="true">
+            <div class="actions">
+              <a class="btn" href="#" data-open-modal data-modal-title="SaaS Landing Page" data-modal-type="image" data-modal-src="" data-modal-desc="High‑performance landing with A/B testable sections and CMS.">Preview</a>
+              <a class="btn primary" href="#contact">Hire Me</a>
+            </div>
+          </div>
+          <div class="meta">
+            <h4 id="p2-title">Nimbus — Web Launch</h4>
+            <div class="badges"><span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JS</span></div>
+          </div>
+        </article>
+
+        <article class="card project" data-category="video" aria-labelledby="p3-title">
+          <div class="thumb" role="img" aria-label="Video editing frame">
+            <div class="placeholder">Product Reel</div>
+          </div>
+          <div class="overlay" aria-hidden="true">
+            <div class="actions">
+              <a class="btn" href="#" data-open-modal data-modal-title="Product Reel" data-modal-type="video" data-modal-src="" data-modal-desc="60‑second cutdown with motion graphics and captions.">Play</a>
+              <a class="btn primary" href="#contact">Hire Me</a>
+            </div>
+          </div>
+          <div class="meta">
+            <h4 id="p3-title">Volt — Launch Reel</h4>
+            <div class="badges"><span class="badge">Motion</span><span class="badge">Color</span></div>
+          </div>
+        </article>
+
+        <article class="card project" data-category="graphics" aria-labelledby="p4-title">
+          <div class="thumb" role="img" aria-label="Packaging design mockup">
+            <div class="placeholder">Packaging</div>
+          </div>
+          <div class="overlay" aria-hidden="true">
+            <div class="actions">
+              <a class="btn" href="#" data-open-modal data-modal-title="Eco Packaging" data-modal-type="image" data-modal-src="" data-modal-desc="Eco‑friendly packaging set with spot UV and bold color.">Preview</a>
+              <a class="btn primary" href="#contact">Hire Me</a>
+            </div>
+          </div>
+          <div class="meta">
+            <h4 id="p4-title">EcoPack — Retail</h4>
+            <div class="badges"><span class="badge">Packaging</span><span class="badge">Print</span></div>
+          </div>
+        </article>
+
+        <article class="card project" data-category="web" aria-labelledby="p5-title">
+          <div class="thumb" role="img" aria-label="Dashboard UI">
+            <div class="placeholder">Dashboards</div>
+          </div>
+          <div class="overlay" aria-hidden="true">
+            <div class="actions">
+              <a class="btn" href="#" data-open-modal data-modal-title="Analytics Dashboard" data-modal-type="image" data-modal-src="" data-modal-desc="Modular UI with charts, tables, and dark mode.">Preview</a>
+              <a class="btn primary" href="#contact">Hire Me</a>
+            </div>
+          </div>
+          <div class="meta">
+            <h4 id="p5-title">Pulse — UI System</h4>
+            <div class="badges"><span class="badge">UI/UX</span><span class="badge">SPA</span></div>
+          </div>
+        </article>
+
+        <article class="card project" data-category="video" aria-labelledby="p6-title">
+          <div class="thumb" role="img" aria-label="Timeline with clips">
+            <div class="placeholder">Ad Edit</div>
+          </div>
+          <div class="overlay" aria-hidden="true">
+            <div class="actions">
+              <a class="btn" href="#" data-open-modal data-modal-title="30s Ad Edit" data-modal-type="video" data-modal-src="" data-modal-desc="Snappy 30‑sec commercial edit with SFX hits.">Play</a>
+              <a class="btn primary" href="#contact">Hire Me</a>
+            </div>
+          </div>
+          <div class="meta">
+            <h4 id="p6-title">Swift — Commercial</h4>
+            <div class="badges"><span class="badge">Edit</span><span class="badge">SFX</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="container about grid cols-2" aria-labelledby="about-title">
+      <div class="avatar" role="img" aria-label="Portrait placeholder"></div>
+      <div>
+        <h2 id="about-title">About Me</h2>
+        <p class="muted">Hi, I’m Alexander Innocent — a multidisciplinary creative blending strategy with clean aesthetics and reliable code. Over the last 2+ years, I’ve helped startups and SMEs stand out with identity systems, blazing‑fast sites, and high‑retention video content.</p>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:14px">
+          <div class="card">
+            <strong>15+</strong>
+            <div class="muted">Brands Launched</div>
+          </div>
+          <div class="card">
+            <strong>100K+</strong>
+            <div class="muted">Views across edits</div>
+          </div>
+        </div>
+
+        <h3 style="margin-top:24px">Skills</h3>
+        <div class="skill"><div style="display:flex; justify-content:space-between"><span>Graphics & Branding</span><span>90%</span></div><div class="bar"><div class="fill" data-fill="90"></div></div></div>
+        <div class="skill"><div style="display:flex; justify-content:space-between"><span>Frontend Dev</span><span>75%</span></div><div class="bar"><div class="fill" data-fill="75"></div></div></div>
+        <div class="skill"><div style="display:flex; justify-content:space-between"><span>Video Editing</span><span>65%</span></div><div class="bar"><div class="fill" data-fill="65"></div></div></div>
+
+        <div class="cta" style="margin-top:18px">
+          <a class="btn primary" href="#contact">Let’s Work</a>
+          <a class="btn" href="#projects">See Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container" aria-labelledby="contact-title">
+      <div class="section-head">
+        <div>
+          <h2 id="contact-title">Let’s build something great</h2>
+          <p>Tell me about your timeline, goals, and budget. I’ll reply with a plan.</p>
+        </div>
+      </div>
+      <div class="grid cols-2">
+        <form id="contact-form" novalidate>
+          <div>
+            <label for="name" class="sr-only">Name</label>
+            <input id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div>
+            <label for="email" class="sr-only">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div>
+            <label for="service" class="sr-only">Service</label>
+            <input id="service" name="service" list="service-list" placeholder="Service (Graphics, Web, Video)" />
+            <datalist id="service-list">
+              <option value="Graphic Design"></option>
+              <option value="Web Development"></option>
+              <option value="Video Editing"></option>
+              <option value="Full Package"></option>
+            </datalist>
+          </div>
+          <div>
+            <label for="message" class="sr-only">Message</label>
+            <textarea id="message" name="message" placeholder="Project details…" required></textarea>
+          </div>
+          <button class="btn primary" type="submit">Send Message</button>
+          <p id="form-status" class="muted" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="card">
+          <h3>Contact Details</h3>
+          <p class="muted">Prefer email? <a href="mailto:alexanderinnocentalexis9@gmail.com">alexanderinnocentalexis9@gmail.com</a><br/>Based in NG · Working worldwide 🌍</p>
+          <div class="social" aria-label="Social links">
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="Instagram">★</a>
+            <a href="#" aria-label="YouTube">▶</a>
+            <a href="#" aria-label="Dribbble">●</a>
+            <a href="#" aria-label="GitHub">{ }</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap">
+      <small>© <span id="year"></span> Alexzo Graphics. All rights reserved.</small>
+      <a class="btn ghost" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+   <!-- MODAL -->
+  <dialog id="preview-modal" style="border:none; border-radius:18px; padding:0; background:rgb(39, 12, 12); color:var(--text); max-width:min(960px, 94vw)">
+    <form method="dialog" style="margin:0">
+      <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; padding:12px 16px; border-bottom:1px solid #5e2a2a">
+        <strong id="modal-title">Preview</strong>
+        <button class="btn" value="close" aria-label="Close">Close</button>
+      </div>
+      <div id="modal-body" style="padding:14px 16px; max-height:70vh; overflow:auto"></div>
+      <div id="modal-desc" class="muted" style="padding:0 16px 16px"></div>
+    </form>
+  </dialog>
+    
+  
+  <script src="app.js"></script>
+</body>
+</html>
